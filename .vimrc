@@ -10,11 +10,6 @@ syntax enable
 " and show line numbers
 set number
 
-" make vim try to detect file types and load plugins for them
-filetype on
-filetype plugin on
-filetype indent on
-
 " reload files changed outside vim
 set autoread
 
@@ -22,7 +17,7 @@ set autoread
 set encoding=utf-8
 set fileencoding=utf-8
 
-" enable matchit plugin (figure out what this does first) 
+" enable matchit plugin (figure out what this does first)
 " runtime macros/matchit.vim
 
 " set vim to delete over line breaks and auto-indentation
@@ -90,6 +85,8 @@ autocmd BufWinLeave * call clearmatches()
 
 
 " -------------------- PLUGIN CONFIGURATION -----------------
+filetype off "required for Vundle
+
 " initiate Vundle
 let &runtimepath.=',$HOME/.vim/bundle/Vundle.vim'
 call vundle#begin()
@@ -106,9 +103,14 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'skammer/vim-css-color'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'janko-m/vim-test'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 " end plugin definition
 call vundle#end()
+filetype plugin indent on
 
 " run JSHint for .js
 autocmd BufWritePost *.js silent :JSHint
@@ -116,4 +118,3 @@ autocmd BufWritePost *.js silent :JSHint
 " FuzzyFinder bindings
 nmap <leader>t :FufFileWithCurrentBufferDir<CR>
 nmap <leader>f :FufCoverageFile<CR>
-
