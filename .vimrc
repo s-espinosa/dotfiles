@@ -98,7 +98,7 @@ Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'itchyny/lightline.vim'
 Plugin 'mattn/emmet-vim'
-Plugin 'Shutnik/jshint2.vim'
+Plugin 'scrooloose/syntastic'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'skammer/vim-css-color'
 Plugin 'cakebaker/scss-syntax.vim'
@@ -113,8 +113,16 @@ Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
 
-" run JSHint for .js
-autocmd BufWritePost *.js silent :JSHint
+ " syntastic configuration
+ set statusline+=%#warningmsg#
+ set statusline+=%{SyntasticStatuslineFlag()}
+ set statusline+=%*
+
+ let g:syntastic_always_populate_loc_list = 1
+ let g:syntastic_auto_loc_list = 1
+ let g:syntastic_check_on_open = 1
+ let g:syntastic_check_on_wq = 0
+ let g:syntastic_javascript_checkers = ['eslint']
 
 " FuzzyFinder bindings
 nmap <leader>t :FufFileWithCurrentBufferDir<CR>
