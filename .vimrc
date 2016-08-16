@@ -33,6 +33,7 @@ set lazyredraw
 " tabs and indentation
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
+nnoremap <silent> <leader>i gg=G<CR>
 
 " md files are markdown files
 autocmd BufNewFile,BufRead *.md setlocal ft=markdown
