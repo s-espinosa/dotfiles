@@ -26,6 +26,8 @@ set backspace=indent,eol,start
 " screen will not be redrawn while running macros, registers, or other non-typed comments
 set lazyredraw
 
+" copy to cliboard
+set clipboard=unnamed
 
 
 " --------------------- CUSTOMIZATION ----------------------
@@ -33,6 +35,7 @@ set lazyredraw
 " tabs and indentation
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
+nnoremap <silent> <leader>i gg=G<CR>
 
 " md files are markdown files
 autocmd BufNewFile,BufRead *.md setlocal ft=markdown
@@ -113,16 +116,16 @@ Plugin 'jiangmiao/auto-pairs'
 call vundle#end()
 filetype plugin indent on
 
- " syntastic configuration
- set statusline+=%#warningmsg#
- set statusline+=%{SyntasticStatuslineFlag()}
- set statusline+=%*
+" syntastic configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
- let g:syntastic_always_populate_loc_list = 1
- let g:syntastic_auto_loc_list = 1
- let g:syntastic_check_on_open = 1
- let g:syntastic_check_on_wq = 0
- let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 " FuzzyFinder bindings
 nmap <leader>t :FufFileWithCurrentBufferDir<CR>
