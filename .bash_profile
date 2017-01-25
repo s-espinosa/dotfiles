@@ -9,10 +9,11 @@ RESET="\[$(tput sgr0)\]"
 export PS1="${RED}\h:\W\$(parse_git_branch) $ ${RESET}"
 
 #terminal behavior
-alias cl="clear"
 alias profile="vim ~/.bash_profile"
 alias la="ls -alF"
-alias cst="cs ~/Documents/web/school/turing/4module/"
+alias cst="cs ~/Documents/web/turing/ta/"
+alias csp="cs ~/Documents/web/projects"
+. ~/Applications/Scripts/z.sh
 function cs () {
   cd "$@" && ls
 }
@@ -20,17 +21,29 @@ function mdc () {
   mkdir "$@" && cd "$@"
 }
 
-#git shortcuts
+#Deckset for slides
+alias deck="open -a 'Deckset'"
+
+#Updated Vim for Ultisnips
+alias vim='/usr/local/Cellar/vim/8.0.0134_2/bin/vim'
+
+#Ruby benchmarking
+alias rp="ruby-prof --printer=graph_html --sort=self --file=profile.html"
+
+#shortcuts for git
 alias gs="git status"
 alias ga="git add -A"
 alias gc="git commit -m"
+alias gca="git commit --amend -m"
 alias gba="git branch -a"
 alias gch="git checkout"
 alias gbc="git checkout -b"
 alias gd="git diff --patience --ignore-space-change"
+alias gds="git diff --patience --ignore-space-change --staged"
 alias gpo="git push origin"
 alias gpom="git push origin master"
-alias gpum="git pull origin master"
+alias pull="git pull origin master"
+alias pages="git pull origin gh-pages"
 alias glog="git log --pretty=format:\"%Cgreen%h$Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short"
 
 #git autocomplete - run brew install bash-completion from the CLI
@@ -47,10 +60,20 @@ alias hb="hub browse"
 #Rails
 alias be="bundle exec"
 alias nuke="rake db:drop db:create db:migrate db:seed db:test:prepare"
-alias migr="rails g migration"
-
-#Ruby bencchmarking
-alias rp="ruby-prof --printer=graph_html --sort=self --file=profile.html"
 
 #Weather
 alias weather="curl wttr.in/'Denver'"
+
+#RVM additions
+source ~/.profile
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#Paths for Go
+export GOPATH="$HOME/Work"
+export PATH="$PATH:$GOPATH/bin"
+
+#Lunchy autocomplete
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.bash  ]; then
+  . $LUNCHY_DIR/lunchy-completion.bash
+fi
