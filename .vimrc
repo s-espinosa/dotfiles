@@ -7,8 +7,6 @@ set nocompatible
 
 " turn on syntax highlighting
 syntax enable
-" and show line numbers
-set number
 
 " reload files changed outside vim
 set autoread
@@ -28,6 +26,10 @@ set lazyredraw
 
 " copy to cliboard
 set clipboard=unnamed
+
+" set both relative and absolute numbers
+set relativenumber
+set number
 
 
 " --------------------- CUSTOMIZATION ----------------------
@@ -130,3 +132,6 @@ let g:syntastic_javascript_checkers = ['eslint']
 " FuzzyFinder bindings
 nmap <leader>t :FufFileWithCurrentBufferDir<CR>
 nmap <leader>f :FufCoverageFile<CR>
+
+au BufNewFile,BufRead *.handlebars set filetype=html
+au BufNewFile,BufRead *.hbs set filetype=html
