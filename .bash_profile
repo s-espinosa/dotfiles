@@ -13,6 +13,7 @@ alias profile="vim ~/.bash_profile"
 alias la="ls -alF"
 alias cst="cs ~/Documents/web/turing/ta/"
 alias csp="cs ~/Documents/web/projects"
+alias csd="cs ~/Desktop"
 . ~/Applications/Scripts/z.sh
 function cs () {
   cd "$@" && ls
