@@ -10,6 +10,7 @@ export PS1="${RED}\h:\W\$(parse_git_branch) $ ${RESET}"
 
 #terminal behavior
 alias profile="vim ~/.bash_profile"
+alias sp="source ~/.bash_profile"
 alias la="ls -alF"
 alias cst="cs ~/Documents/web/turing/ta/"
 alias csp="cs ~/Documents/web/projects"
@@ -47,9 +48,9 @@ alias pull="git pull origin master"
 alias pages="git pull origin gh-pages"
 alias glog="git log --pretty=format:\"%Cgreen%h$Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short"
 
-#git autocomplete - run brew install bash-completion from the CLI
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+#git autocomplete - run `curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash` from the command line to download bash script.
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
   __git_complete gch _git_checkout
   __git_complete gpo _git_push_origin
 fi
