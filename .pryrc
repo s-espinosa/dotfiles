@@ -26,16 +26,37 @@ class Cohort
   end
 end
 
-cohort_1711 = [
-               "Andrew Jeffery",
-               "Andy Dymond",
-               "Anna Lewis",
-               "Anna Royer",
-               "Ellen Cornelius",
-               "Joseph Jobes",
-               "Luke Chambers",
-               "Matt Milton",
-               "Megan McMahon"
+cohort_1806 = [
+                "Abdulla Qudrat",
+                "Andrew Tobin",
+                "Autumn Martin",
+                "Averi Johnson",
+                "Ben Ghalami",
+                "Daniel Mulitauopele",
+                "Dylan Meskis",
+                "Erik Schneider",
+                "Harper Bellows",
+                "Jesse Ling",
+                "Kathleen Yruegas",
+                "Kelly (Eugene) Marcilliat",
+                "Maria Torres",
+                "Mary Bork",
+                "Melvin Cedeño",
+                "Mike McKee",
+                "Miriam Bensalah",
+                "Nicholas Lindeberg",
+                "Nikki (Mary) Holland-Plum",
+                "Patrick McCartney",
+                "Patrick Shobe",
+                "Rajaa Boulassouak",
+                "Rebecca Hyland",
+                "Ronald Huston Jr",
+                "Ruth Brand",
+                "Samuel Giles",
+                "Silvestre Cuellar",
+                "Tara Craig",
+                "Thomas Nuñez",
+                "Tim Fielder"
               ]
 
-s = Cohort.new(cohort_1711)
+s = Cohort.new(cohort_1806)
