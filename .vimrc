@@ -28,7 +28,6 @@ set lazyredraw
 set clipboard=unnamed
 
 " set both relative and absolute numbers
-set relativenumber
 set number
 
 
@@ -48,7 +47,7 @@ colorscheme solarized
 " lightline config
 set laststatus=2
 let g:lightline = {
-  \ 'colorscheme': 'solarized_dark'
+  \ 'colorscheme': 'solarized'
   \ }
 
 " Don't show the splash screen on startup
@@ -113,6 +112,8 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'terryma/vim-multiple-cursors'
 
 " end plugin definition
 call vundle#end()
