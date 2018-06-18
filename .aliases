@@ -26,4 +26,4 @@ alias glog="git log --pretty=format:\"%Cgreen%h$Creset %Cblue%ad%Creset %s%C(yel
 
 # SSH Raspberry Pi
 alias pi1="ssh pi@192.168.0.12"
-alias pi2="ssh pi@192.168.0.13"
+alias pi2="ssh pi@10.1.2.232"
