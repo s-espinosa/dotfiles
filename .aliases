@@ -25,5 +25,5 @@ alias weather="curl wttr.in/'Denver'"
 alias glog="git log --pretty=format:\"%Cgreen%h$Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short"
 
 # SSH Raspberry Pi
-alias pi1="ssh pi@192.168.0.12"
+alias pi1="ssh pi@rumcherry.local"
 alias pi2="ssh pi@10.1.2.232"
