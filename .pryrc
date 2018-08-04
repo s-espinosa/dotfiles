@@ -44,7 +44,7 @@ cohort_1806 = [
                 "Melvin Cedeño",
                 "Mike McKee",
                 "Miriam Bensalah",
-                "Nicholas Lindeberg",
+                "Nick Lindeberg",
                 "Nikki (Mary) Holland-Plum",
                 "Patrick McCartney",
                 "Patrick Shobe",
