@@ -24,6 +24,17 @@ class Cohort
     @responders = students.dup if responders == [] || responders == nil
     responders.shuffle!.pop
   end
+
+  def groups_of(count)
+    students.dup.shuffle.each_slice(count).with_index do |group, i|
+      puts "Group #{i}"
+      puts group.join(",\n") + "\n\n"
+    end
+  end
+
+  def group_by(count)
+    groups_of(count)
+  end
 end
 
 cohort_1808 = [
