@@ -35,3 +35,5 @@ alias pi3="ssh pi@elderberry.local"
 alias pi4="ssh pi@huckleberry.local"
 alias pi5="ssh pi@dewberry.local"
 alias pi6="ssh pi@lingonberry.local"
+
+export ERL_AFLAGS="-kernel shell_history enabled"
