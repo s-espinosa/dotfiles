@@ -18,6 +18,10 @@ alias deck="open -a 'Deckset'"
 alias be="bundle exec"
 alias nuke="rake db:drop db:create db:migrate db:seed db:test:prepare"
 
+# Heroku
+alias hp='heroku accounts:set personal'
+alias hw='heroku accounts:set work'
+
 # Weather
 alias weather="curl wttr.in/'Denver'"
 

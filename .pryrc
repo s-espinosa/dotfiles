@@ -24,12 +24,23 @@ class Cohort
     @responders = students.dup if responders == [] || responders == nil
     responders.shuffle!.pop
   end
+
+  def groups_of(count)
+    students.dup.shuffle.each_slice(count).with_index do |group, i|
+      puts "Group #{i}"
+      puts group.join(",\n") + "\n\n"
+    end
+  end
+
+  def group_by(count)
+    groups_of(count)
+  end
 end
 
-cohort_1806 = [
+cohort_1808 = [
+                "Aaron Brooks Roberts",
                 "Aizar Cabrera",
                 "Amy Petrie",
-                "Austin Wood",
                 "Averi Johnson",
                 "Bailey Diveley",
                 "Cesar Jolobois",
@@ -38,15 +49,15 @@ cohort_1806 = [
                 "Isaac Falkenstine",
                 "Jenn Lao",
                 "Jimmy Smith",
-                "John Aaron Brooks Roberts",
-                "Joshua Baik",
                 "Jordan Whitten",
-                "Katelyn Rimkunas",
+                "Joshua Baik",
+                "Kate Rimkunas",
                 "Mary Bork",
                 "Meg Stang",
                 "Melvin Cedeño",
                 "Michael Gatewood",
                 "Nikki Holland-Plum",
+                "Noah Flint",
                 "Norman Schultz",
                 "Preston Jarnagin",
                 "Quinn Krug",
@@ -56,7 +67,8 @@ cohort_1806 = [
                 "Samuel Giles",
                 "Silvestre Cuellar",
                 "Tom Nuñez",
-                "Tony Robertson"
+                "Timothy Fell",
+                "William Fischer"
               ]
 
-s = Cohort.new(cohort_1806)
+s = Cohort.new(cohort_1808)
