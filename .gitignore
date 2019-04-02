@@ -106,3 +106,4 @@ bower.json
 # Vim #
 #######
 *.swp
+.vim
