@@ -38,3 +38,5 @@ alias pi5="ssh pi@dewberry.local"
 alias pi6="ssh pi@lingonberry.local"
 alias pi7="ssh pi@banana.local"
 alias pi8="ssh pi@blueberry.local"
+
+export ERL_AFLAGS="-kernel shell_history enabled"
