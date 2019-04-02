@@ -13,6 +13,7 @@ function cs () {
 
 # Deckset for slides
 alias deck="open -a 'Deckset'"
+alias mac="open -a 'MacDown'"
 
 # Rails
 alias be="bundle exec"
