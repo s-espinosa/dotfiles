@@ -5,7 +5,7 @@ alias vimx="vim ~/.vimrc"
 alias pryx="vim ~/.pryrc"
 alias cst="cs ~/Documents/web/turing/"
 alias csd="cs ~/Desktop"
-alias csp="cs ~/Documents/web/practice/"
+alias csg="cs ~/Documents/web/growth/"
 . ~/Applications/Scripts/z.sh
 function cs () {
   cd "$@" && ls
