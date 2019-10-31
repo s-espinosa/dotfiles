@@ -6,7 +6,6 @@ alias pryx="vim ~/.pryrc"
 alias cst="cs ~/Documents/web/turing/"
 alias csd="cs ~/Desktop"
 alias csg="cs ~/Documents/web/growth/"
-. ~/Applications/Scripts/z.sh
 function cs () {
   cd "$@" && ls
 }
