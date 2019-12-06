@@ -107,3 +107,8 @@ bower.json
 #######
 *.swp
 .vim
+
+# Antigen #
+###########
+.antigen.zwc
+
