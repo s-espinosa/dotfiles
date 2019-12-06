@@ -49,6 +49,9 @@ set laststatus=2
 let g:lightline = {
   \ 'colorscheme': 'solarized'
   \ }
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=0
+
 
 " Don't show the splash screen on startup
 set shortmess=I
