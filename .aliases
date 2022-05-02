@@ -6,6 +6,7 @@ alias pryx="vim ~/.pryrc"
 alias cst="cs ~/Documents/web/turing/"
 alias csd="cs ~/Desktop"
 alias csg="cs ~/Documents/web/growth/"
+alias csb="cs ~/Documents/web/basecs/"
 function cs () {
   cd "$@" && ls
 }
@@ -21,6 +22,11 @@ alias nuke="rake db:drop db:create db:migrate db:seed db:test:prepare"
 # Heroku
 alias hp='heroku accounts:set personal'
 alias hw='heroku accounts:set work'
+
+# Python
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 # Static Site Tools
 alias ss='python -m SimpleHTTPServer'

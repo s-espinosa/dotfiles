@@ -100,19 +100,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " start plugin definition
-Plugin 'vim-scripts/L9'
-Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'itchyny/lightline.vim'
-Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'skammer/vim-css-color'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'janko-m/vim-test'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'janko-m/vim-test'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'terryma/vim-multiple-cursors'
@@ -126,15 +118,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" Syntastic preferences
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
-
-" FuzzyFinder bindings
-nmap <leader>t :FufFileWithCurrentBufferDir<CR>
-nmap <leader>f :FufCoverageFile<CR>
 
 au BufNewFile,BufRead *.handlebars set filetype=html
 au BufNewFile,BufRead *.hbs set filetype=html
