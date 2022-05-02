@@ -28,8 +28,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# Simple Static Site Server
+# Static Site Tools
 alias ss='python -m SimpleHTTPServer'
+alias mm='middleman'
 
 # Weather
 alias weather="curl wttr.in/'Denver'"
