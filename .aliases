@@ -4,7 +4,7 @@ alias zshx="vim ~/.zshrc"
 alias vimx="vim ~/.vimrc"
 alias pryx="vim ~/.pryrc"
 alias csd="cs ~/Desktop"
-alias cst="cs ~/Documents/flow"
+alias csf="cs ~/Documents/flow"
 function cs () {
   cd "$@" && ls
 }
