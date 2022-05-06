@@ -16,4 +16,14 @@ To install on a new machine:
 source "${HOME}/documents/dotfiles/.index"
 ```
 
+1. `source ~/.zshrc`
+1. `brew install vim`
+1. `mkdir -p ~/Documents/dotfiles/.vim/bundle`
+1. `mkdir ~/Documents/dotfiles/.vim/colors`
+1. `git clone git@github.com:altercation/vim-colors-solarized.git`
+1. `mv vim-colors-solarized/colors/solarized.vim ~/.vim/colors`
+1. `rm -rf vim-colors-solarized`
+1. `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+1. Open vim and run `:PluginInstall`
+
 Think that should be it? Pull Requests accepted? Maybe? Kind of? Yes to fix things. Probably not to make changes. Fork and make your own.

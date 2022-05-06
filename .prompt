@@ -11,10 +11,8 @@ zstyle ':vcs_info:*' stagedstr "%{$fg[green]%}+%{$reset_color%}"
 zstyle ':vcs_info:git*' formats " %{$fg[blue]%}%b%{$reset_color%}%u%c%{$reset_color%}"
 zstyle ':vcs_info:git*' actionformats " %{$fg[blue]%}%b%{$reset_color%}%{$fg[orange]%}(%a)%{$reset_color%}%u%c%{$reset_color%}"
 
-local current_username="%{$fg[blue]%}%m%{$reset_color%}"
+local current_username="%{$fg[blue]%}%n@%m%{$reset_color%}"
 local current_directory="%{$fg[cyan]%}%c%{$reset_color%}"
 local current_branch_name='${vcs_info_msg_0_}'
 
 PROMPT="${current_username}:${current_directory}${current_branch_name}=> "
-
-
