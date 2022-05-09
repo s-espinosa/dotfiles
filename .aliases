@@ -3,13 +3,14 @@ alias aliax="vim ~/.aliases"
 alias zshx="vim ~/.zshrc"
 alias vimx="vim ~/.vimrc"
 alias pryx="vim ~/.pryrc"
-alias cst="cs ~/Documents/web/turing/"
 alias csd="cs ~/Desktop"
-alias csg="cs ~/Documents/web/growth/"
-alias csb="cs ~/Documents/web/basecs/"
+alias csf="cs ~/Documents/flow"
 function cs () {
   cd "$@" && ls
 }
+
+# Use Homebrew Installed Vim
+alias vim="$(brew --prefix vim)/bin/vim"
 
 # Deckset for slides
 alias deck="open -a 'Deckset'"
@@ -28,8 +29,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# Simple Static Site Server
+# Static Site Tools
 alias ss='python -m SimpleHTTPServer'
+alias mm='middleman'
 
 # Weather
 alias weather="curl wttr.in/'Denver'"

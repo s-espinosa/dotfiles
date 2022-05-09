@@ -1,4 +1,4 @@
-source /usr/local/share/antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 # Load the oh-my-zsh library
 antigen use oh-my-zsh
@@ -13,5 +13,3 @@ antigen bundle djui/alias-tips
 # antigen theme pygmalion
 
 antigen apply
-
-
