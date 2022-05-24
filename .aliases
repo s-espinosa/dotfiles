@@ -24,6 +24,9 @@ alias nuke="rake db:drop db:create db:migrate db:seed db:test:prepare"
 alias hp='heroku accounts:set personal'
 alias hw='heroku accounts:set work'
 
+# RuboCop
+alias berm='git diff --name-only main --diff-filter AMT | xargs bundle exec rubocop'
+
 # Python
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
