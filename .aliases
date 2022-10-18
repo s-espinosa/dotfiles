@@ -16,6 +16,9 @@ alias vim="$(brew --prefix vim)/bin/vim"
 alias deck="open -a 'Deckset'"
 alias mac="open -a 'MacDown'"
 
+# Docker
+alias dcomp="docker compose"
+
 # Rails
 alias be="bundle exec"
 alias nuke="rake db:drop db:create db:migrate db:seed db:test:prepare"

@@ -49,7 +49,7 @@ set laststatus=2
 let g:lightline = {
   \ 'colorscheme': 'solarized'
   \ }
-set colorcolumn=80
+set colorcolumn=110
 
 
 " Don't show the splash screen on startup
