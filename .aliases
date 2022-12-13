@@ -28,7 +28,7 @@ alias hp='heroku accounts:set personal'
 alias hw='heroku accounts:set work'
 
 # RuboCop
-alias berm='git diff --name-only main --diff-filter AMT | xargs bundle exec rubocop'
+alias berm='bundle exec rubocop-changes --branch_default origin/main'
 
 # Python
 if command -v pyenv 1>/dev/null 2>&1; then
