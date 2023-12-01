@@ -43,13 +43,16 @@ autocmd BufNewFile,BufRead *.md setlocal ft=markdown
 
 " colors
 set background=dark
-colorscheme solarized
+let g:gruvbox_contrast_dark = 'hard'
+
 " lightline config
 set laststatus=2
 let g:lightline = {
-  \ 'colorscheme': 'solarized'
+  \ 'colorscheme': 'gruvbox_contrast_dark'
   \ }
 set colorcolumn=110
+autocmd vimenter * ++nested colorscheme gruvbox
+
 
 
 " Don't show the splash screen on startup
@@ -108,6 +111,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'morhetz/gruvbox'
 
 " end plugin definition
 call vundle#end()
