@@ -47,9 +47,6 @@ let g:gruvbox_contrast_dark = 'hard'
 
 " lightline config
 set laststatus=2
-let g:lightline = {
-  \ 'colorscheme': 'gruvbox_contrast_dark'
-  \ }
 set colorcolumn=110
 autocmd vimenter * ++nested colorscheme gruvbox
 

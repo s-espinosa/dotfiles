@@ -22,7 +22,6 @@ alias dcomp="docker compose"
 
 # Rails
 alias be="bundle exec"
-alias nuke="rake db:drop db:create db:migrate db:seed db:test:prepare"
 
 # Heroku
 alias hp='heroku accounts:set personal'
@@ -41,7 +40,7 @@ alias ss='python -m SimpleHTTPServer'
 alias mm='middleman'
 
 # Weather
-alias weather="curl wttr.in/'Denver'"
+alias weather="curl wttr.in/'Austin'"
 
 # Fancy Git Log
 alias glog="git log --pretty=format:\"%Cgreen%h$Creset %Cblue%ad%Creset %s%C(yellow)%d%Creset %Cblue[%an]%Creset\" --graph --date=short"
