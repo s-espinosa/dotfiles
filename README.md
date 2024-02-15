@@ -25,5 +25,9 @@ source "${HOME}/documents/dotfiles/.index"
 1. `rm -rf vim-colors-solarized`
 1. `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 1. Open vim and run `:PluginInstall`
+1. Open iTerm preferences -> Profiles -> Colors -> Color Presets -> Import...
+1. Select GruvboxHardDark.itermcolors from ~/Documents/dotfiles/iterm_colors
+1. Import, then select the new option from the same dropdown.
+1. Still in the iTerm preferences, select Profile -> Terminal and check Unlimited scrollback.
 
 I think that should be it? Pull Requests accepted? Maybe? Kind of? Yes to fix things. Probably not to make changes. Fork and make your own.
