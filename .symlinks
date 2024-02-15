@@ -3,3 +3,4 @@ ln -sf "${HOME}/documents/dotfiles/.pryrc" ~/.pryrc
 ln -sf "${HOME}/documents/dotfiles/.vim" ~/.vim
 ln -sf "${HOME}/documents/dotfiles/.gitignore" ~/.gitignore
 ln -sf "${HOME}/documents/dotfiles/.rspec" ~/.rspec
+ln -sf "${HOME}/documents/dotfiles/.irbrc" ~/.irbrc
