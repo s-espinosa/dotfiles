@@ -27,8 +27,10 @@ alias be="bundle exec"
 alias hp='heroku accounts:set personal'
 alias hw='heroku accounts:set work'
 
-# RuboCop
+# Linting
 alias berm='bundle exec rubocop-changes -b main'
+alias rca="git diff HEAD^ --name-only --diff-filter=d -m  **/*.rb ':!db/*schema.rb' | xargs bundle exec rubocop -a"
+alias erba="git diff HEAD^ --name-only --diff-filter=d -m  **/*.erb  | xargs bundle exec erblint -a"
 
 # Python
 if command -v pyenv 1>/dev/null 2>&1; then
