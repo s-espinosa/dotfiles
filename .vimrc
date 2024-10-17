@@ -42,13 +42,19 @@ nnoremap <silent> <leader>i gg=G<CR>
 autocmd BufNewFile,BufRead *.md setlocal ft=markdown
 
 " colors
-set background=dark
-let g:gruvbox_contrast_dark = 'hard'
+set termguicolors
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight
 
 " lightline config
 set laststatus=2
 set colorcolumn=110
-autocmd vimenter * ++nested colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme tokyonight
+let g:lightline = {'colorscheme' : 'tokyonight'}
+let g:airline_theme = "tokyonight"
 
 
 
@@ -108,7 +114,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'morhetz/gruvbox'
+Plugin 'ghifarit53/tokyonight-vim'
 
 " end plugin definition
 call vundle#end()
