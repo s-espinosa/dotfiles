@@ -22,6 +22,7 @@ alias dcomp="docker compose"
 
 # Rails
 alias be="bundle exec"
+alias berc="bundle exec rails c"
 
 # Heroku
 alias hp='heroku accounts:set personal'
