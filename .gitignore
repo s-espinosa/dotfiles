@@ -113,3 +113,7 @@ bower.json
 ###########
 .antigen.zwc
 
+# AI #
+###########
+.aider*
+

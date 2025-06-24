@@ -2,3 +2,5 @@ source "${HOME}/documents/dotfiles/.antigen"
 source "${HOME}/documents/dotfiles/.prompt"
 source "${HOME}/documents/dotfiles/.aliases"
 source "${HOME}/documents/dotfiles/.symlinks"
+source "${HOME}/documents/dotfiles/.env"
+

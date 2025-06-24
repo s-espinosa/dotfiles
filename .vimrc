@@ -37,6 +37,7 @@ set number
 set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set autoindent
 nnoremap <silent> <leader>i gg=G<CR>
+set guifont=Fira\ Code:h12
 
 " md files are markdown files
 autocmd BufNewFile,BufRead *.md setlocal ft=markdown
@@ -44,19 +45,9 @@ autocmd BufNewFile,BufRead *.md setlocal ft=markdown
 " colors
 set termguicolors
 
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 1
-
-colorscheme tokyonight
-
 " lightline config
 set laststatus=2
 set colorcolumn=110
-autocmd vimenter * ++nested colorscheme tokyonight
-let g:lightline = {'colorscheme' : 'tokyonight'}
-let g:airline_theme = "tokyonight"
-
-
 
 " Don't show the splash screen on startup
 set shortmess=I
@@ -115,10 +106,12 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ghifarit53/tokyonight-vim'
+Plugin 'rainglow/vim'
 
 " end plugin definition
 call vundle#end()
 filetype plugin indent on
+colorscheme gloom-contrast
 
 " syntastic configuration
 set statusline+=%#warningmsg#
