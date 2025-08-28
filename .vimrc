@@ -107,11 +107,12 @@ Plugin 'elixir-editors/vim-elixir'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ghifarit53/tokyonight-vim'
 Plugin 'rainglow/vim'
+Plugin 'EdenEast/nightfox.nvim'
 
 " end plugin definition
 call vundle#end()
 filetype plugin indent on
-colorscheme gloom-contrast
+colorscheme nightfox
 
 " syntastic configuration
 set statusline+=%#warningmsg#
